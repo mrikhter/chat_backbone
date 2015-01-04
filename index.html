@@ -1,0 +1,27 @@
+  <div id='header'>
+  </div>
+  <div id='inbox'>
+  </div>
+  <div id='message'>
+  </div>
+<script type='text/html' id='header_template'>
+    <div id='header'>
+      <li><%= count %></li>
+    </div>
+</script>
+<script type='text/html' id='inbox_template'>
+      <li><%= from %></li>
+</script>
+<script type='text/html' id='message_template'>
+      <li><%= to %></li>
+      <li><%= from %></li>
+      <li><%= text %></li>
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js'></script>
+<script src='http://code.jquery.com/jquery-1.11.2.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js'></script>
+<script src="models/message.js"></script>
+<script src="collections/messages.js"></script>
+<script src="views/messageView.js"></script>
+<script src="views/messagesView.js"></script>
+<script src="views/headerView.js"></script>
